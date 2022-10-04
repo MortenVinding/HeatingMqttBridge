@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Heating Mqtt Bridge for Roth Touchline
+url: 'https://github.com/MortenVinding/HeatingMqttBridge'
+maintainer: misery <awesome@example.com>
