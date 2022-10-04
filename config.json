@@ -23,7 +23,7 @@
       "cert": "str?",
       "user": "str?",
       "password": "str?"
-    },
+    }
   },
   "image": "aklitzing/heatingmqttbridge"
 }
