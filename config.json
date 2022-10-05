@@ -20,6 +20,9 @@
   "ingress": true,
   "timeout": 30,
   "options": {
+    "roth": {
+      "controller": "192.168.0.70"
+    },
     "mqtt": {
       "server": "mqtt://core-mosquitto:1883",
       "user": "mqtt",
