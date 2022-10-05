@@ -20,14 +20,15 @@
   "ingress": true,
   "timeout": 30,
   "options": {
-    "mqtt": {}
+    "mqtt": {
+      "server": "mqtt://core-mosquitto:1883",
+      "user": "mqtt",
+      "password": ""
+    }
   },
   "schema": {
     "mqtt": {
       "server": "str?",
-      "ca": "str?",
-      "key": "str?",
-      "cert": "str?",
       "user": "str?",
       "password": "str?"
     }
