@@ -30,6 +30,9 @@
     }
   },
   "schema": {
+    "roth": {
+      "controller": "str?"
+    },
     "mqtt": {
       "server": "str?",
       "user": "str?",
