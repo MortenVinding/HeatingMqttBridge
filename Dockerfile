@@ -8,5 +8,5 @@ RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w"
 FROM scratch
 COPY --from=builder /src/HeatingMqttBridge /bin/HeatingMqttBridge
 
-ENV BROKER=$server HEATING=$controller
+ENV BROKER=$(bashio::services 'mqtt' 'host') BROKER_USER=$(bashio::services 'mqtt' 'username') BROKER_PSW=$(bashio::services 'mqtt' 'password') HEATING=$(bashio::config 'roth.controller')
 CMD ["/bin/HeatingMqttBridge", "-env"]
