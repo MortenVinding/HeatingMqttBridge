@@ -602,7 +602,7 @@ func setStringParam(param *string, envName string, useEnv bool, defaultValue str
 	}
 
 	if required && *param == "" {
-		log.Println(envName, "is undefined")
+		log.Println(envName, "is undefined and this is not cached")
 		os.Exit(1)
 	}
 }
