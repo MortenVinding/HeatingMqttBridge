@@ -26,7 +26,7 @@
     "mqtt": {
       "server": "mqtt://core-mosquitto:1883",
       "user": "mqtt",
-      "password": "hemmelig"
+      "password": "hemmelig-shh"
     }
   },
   "schema": {
@@ -36,7 +36,7 @@
     "mqtt": {
       "server": "str?",
       "user": "str?",
-      "password": "str?"
+      "password": "password?"
     }
   },
   "image": "aklitzing/heatingmqttbridge"
