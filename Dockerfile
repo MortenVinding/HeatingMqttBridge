@@ -9,4 +9,4 @@ FROM scratch
 COPY --from=builder /src/HeatingMqttBridge /bin/HeatingMqttBridge
 
 ENV BROKER=$(bashio::services 'mqtt' 'host') BROKER_USER=$(bashio::services 'mqtt' 'username') BROKER_PSW=$(bashio::services 'mqtt' 'password') HEATING=$(bashio::config 'roth.controller')
-CMD /bin/HeatingMqttBridge BROKER=$(bashio::services 'mqtt' 'host') BROKER_USER=$(bashio::services 'mqtt' 'username') BROKER_PSW=$(bashio::services 'mqtt' 'password') HEATING=192.168.0.20
+CMD /bin/HeatingMqttBridgegit BROKER=$(bashio::services 'mqtt' 'host') BROKER_USER=$(bashio::services 'mqtt' 'username') BROKER_PSW=$(bashio::services 'mqtt' 'password') HEATING=192.168.0.20
