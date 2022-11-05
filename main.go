@@ -591,6 +591,7 @@ func createClientOptions(broker string, user string, password string, cleansess 
 }
 
 func setStringParam(param *string, envName string, useEnv bool, defaultValue string, required bool) {
+	log.Println("Trying to start git version")
 	if *param == "" {
 		if useEnv {
 			*param = os.Getenv(envName)
@@ -602,7 +603,7 @@ func setStringParam(param *string, envName string, useEnv bool, defaultValue str
 	}
 
 	if required && *param == "" {
-		log.Println(envName, "is undefined and this is not cached")
+		log.Println(envName, "is undefined")
 		os.Exit(1)
 	}
 }
