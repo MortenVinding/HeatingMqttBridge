@@ -7,6 +7,7 @@
 This tiny bridge polls the central station of Roth EnergyLogic and
 pushes all information to an Mqtt broker.
 
+Trying to make a Home Assistant add-on... Morten Vinding
 
 ## Parameters
 All parameters can be passed via cmdline arguments or via environment variables. If both are passed the cmdline argument has precedence.
